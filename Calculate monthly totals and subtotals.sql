@@ -1,1 +1,1 @@
-
+-- Using ROLLUP, COALESCE, and BETWEEN, calculate monthly revenue totals and sub-totals for a firm's facilities in a year
