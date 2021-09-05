@@ -1,1 +1,0 @@
---Using a window function and CTE, pull top N entities by revenue generated
