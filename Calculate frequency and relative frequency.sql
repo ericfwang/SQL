@@ -1,1 +1,0 @@
--- Using CASE WHEN and AVG, calculate the frequency and relative frequency of certain fields
