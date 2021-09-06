@@ -14,7 +14,7 @@ SELECT *
 FROM table AS a
 LEFT JOIN cte AS b
 ON a.field1 = b.field1 AND a.field2 = b.field2 AND a.field3 = b.field3
-WHERE frequency IS NOT NULL
+WHERE frequency IS NOT NULL;
 
 
 -- 2. Using a window function, CTE, and subquery, determine the modal value or values of a field without using MODE()
