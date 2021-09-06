@@ -1,1 +1,0 @@
--- Using a window function and CTE, determine a field's modal value without using MODE()
