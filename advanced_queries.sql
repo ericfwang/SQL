@@ -66,5 +66,5 @@ FROM table;
 
 SELECT SUM(COALESCE((CASE WHEN field = value1 THEN 1 ELSE NULL END),
 		    (CASE WHEN field = value2 THEN 2 ELSE 3 END))
-	  ) AS nested_if
+	  ) AS nested
 FROM table;
