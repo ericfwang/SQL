@@ -68,3 +68,11 @@ SELECT SUM(COALESCE((CASE WHEN field = value1 THEN 1 ELSE NULL END),
 		    (CASE WHEN field = value2 THEN 2 ELSE 3 END))
 	  ) AS nested
 FROM table;
+
+
+-- 7. Using RAND and LIMIT, pull a random sample of the data with N sample observations
+
+SELECT *
+FROM table
+ORDER BY RANDOM()
+LIMIT N;
