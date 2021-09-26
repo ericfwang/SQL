@@ -62,6 +62,7 @@ SELECT 'field_value' AS field_value,
        SUM(CASE WHEN field = value THEN 1 ELSE 0 END) AS freq
 FROM table;
 
+
 -- 6. Using COALESCE and CASE WHEN, construct a nested if statement
 
 SELECT SUM(COALESCE((CASE WHEN field = value1 THEN 1 ELSE NULL END),
