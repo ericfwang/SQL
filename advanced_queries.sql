@@ -5,7 +5,8 @@ SELECT MIN(value) AS min,
        PERCENTILE_DISC(0.5) WITHIN GROUP (ORDER BY value) AS median,
        AVG(value) AS mean,
        PERCENTILE_DISC(0.75) WITHIN GROUP (ORDER BY value) AS q3,
-       MAX(value) AS max
+       MAX(value) AS max,
+       SUM(CASE WHEN value IS NULL THEN 1 ELSE 0 END) AS count_null
 FROM table
 
 
